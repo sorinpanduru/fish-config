@@ -31,6 +31,12 @@ function fish_prompt
     end 
 end
 
+# PATH
+set -x PATH ~/.rvm/bin /usr/local/share/npm/bin $PATH 
+
+# RVM
+rvm > /dev/null
+
 # Disable greeting
 set fish_greeting ""
 
