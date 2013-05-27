@@ -1,28 +1,20 @@
 # virutalenv
-. ~/.config/fish/virtual.fish
+. ~/.config/fish/modules/virtualfish/virtual.fish
 
 set __fish_git_prompt_showdirtystate 1
 set __fish_git_prompt_showupstream verbose
 set __fish_git_prompt_color_branch blue
 set __fish_git_prompt_color_dirtystate red
 
-# Prompt
-function fish_prompt
-    # virtualenv
-    if set -q VIRTUAL_ENV
-        echo -n -s (set_color -b blue white) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
-    end
-    printf '%s@%s %s%s%s%s $ '  (whoami) (hostname|cut -d . -f 1) (set_color $fish_color_cwd) (prompt_pwd) (set_color normal) (__fish_git_prompt)
-end
-
-# PATH
-set -x PATH ~/.rvm/bin /usr/local/share/npm/bin $PATH 
+# Disable greeting
+set fish_greeting ""
 
 # RVM
 rvm > /dev/null
 
-# Disable greeting
-set fish_greeting ""
-
 # Aliases
 alias dj='python manage.py'
+
+# Variables
+set -x EDITOR vim
+set -x PATH ~/.rvm/bin /usr/local/share/npm/bin $PATH 
