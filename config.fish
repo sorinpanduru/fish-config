@@ -13,10 +13,16 @@ set __fish_git_prompt_color_dirtystate red
 set fish_greeting
 
 # Aliases
-alias dj='python manage.py'     # django alias
-alias fk='flake8 .'
-alias uncrustify-all='uncrustify -c uncrustify.cfg -l OC --no-backup (ffind "(\.h|\.m)\$")'
-alias tl='tarsnap --list-archives'
+alias cdh='cd ~'
+alias cdrvx='cd /Applications/MAMP/htdocs/rvx/'
+alias cdfosf='cd /Applications/MAMP/htdocs/fosf/'
+alias android='cd ~/AndroidStudioProjects/'
+alias sprint='ssh -l fd_dev sprintwms.fashiondays.ro -A'
+alias rvx1='ssh -l fd_dev rvx-1.staging.ros.fd.corp -A'
+alias rvx2='ssh -l fd_dev rvx-2.staging.ros.fd.corp -A'
+alias rvx3='ssh -l fd_dev rvx-3.staging.ros.fd.corp -A'
+alias live='ssh -l fd_dev 1-rvx.ros.fd.corp -A'
+alias paralel='ssh -l fd_dev 172.28.248.65 -A'
 
 # Variables
 set -x EDITOR vim               # vim FTW
