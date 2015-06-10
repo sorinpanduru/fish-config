@@ -15,14 +15,14 @@ set fish_greeting
 # Aliases
 alias cdh='cd ~'
 alias cdrvx='cd /Applications/MAMP/htdocs/rvx/'
+alias cdcrons='cd /Users/sorinpanduru/work/rvx_crons'
 alias cdfosf='cd /Applications/MAMP/htdocs/fosf/'
 alias android='cd ~/AndroidStudioProjects/'
-alias sprint='ssh -l fd_dev sprintwms.fashiondays.ro -A'
 alias rvx1='ssh -l fd_dev rvx-1.staging.ros.fd.corp -A'
 alias rvx2='ssh -l fd_dev rvx-2.staging.ros.fd.corp -A'
 alias rvx3='ssh -l fd_dev rvx-3.staging.ros.fd.corp -A'
+alias rvx4='ssh -l fd_dev rvx-4.staging.ros.fd.corp -A'
 alias live='ssh -l fd_dev 1-rvx.ros.fd.corp -A'
-alias paralel='ssh -l fd_dev 172.28.248.65 -A'
 
 # Variables
 set -x EDITOR vim               # vim FTW
